@@ -1,86 +1,60 @@
+/* Мета-тег у HTML: додай у <head> */
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 /* Загальні стилі */
 * {
   box-sizing: border-box;
+}
+body {
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(rgba(255,122,250,0.67), rgba(205,192,204,0.36));
-  overflow-x: hidden;
-}
-
-/* Контейнер */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Основний блок */
-.v1_902 {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-/* Контентні блоки */
-.v1_1065, .v1_1066, .v1_1078, .v6_5, .v6_4, .v6_8 {
-  width: 844px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 20px;
-  margin: 40px auto;
-  position: absolute;
-}
-
-/* Текстові стилі */
-.v1_1067 {
-  font-size: 64px;
-  font-weight: bold;
-}
-
-.v1_1068, .v1_1074, .v1_1072 {
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-/* Адаптивність для iPhone */
-@media (max-width: 768px) {
-  .v1_1065, .v1_1066, .v1_1078, .v6_5, .v6_4, .v6_8 {
-    width: 95%;
-    max-width: 400px;
-    position: relative;
-  }
-
-  .v1_902 {
-    height: auto;
-    padding-bottom: 50px;
+/* Медійний запит для екранів до 600px (мобільних) */
+@media (max-width: 600px) {
+  .v1_1065, .v1_1066 {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 10px 0 !important;
+    background-size: contain !important; /* щоб фон краще підлаштовувався */
   }
 
   .v1_1067 {
-    font-size: 40px;
-    text-align: center;
+    font-size: 32px !important;
+    text-align: center !important;
+    position: relative !important;
+    width: 100% !important;
+    top: auto !important;
+    left: auto !important;
   }
 
-  .v1_1068, .v1_1074, .v1_1072 {
-    font-size: 18px;
-    text-align: center;
-    width: 90%;
-    margin: auto;
+  .v1_1068, .v1_1074, .v1_1072, .v1_1077 {
+    font-size: 18px !important;
+    position: relative !important;
+    width: 100% !important;
+    top: auto !important;
+    left: auto !important;
+    text-align: center !important;
   }
-}
 
-/* Оптимізація для великих екранів */
-@media (min-width: 1024px) {
-  .v1_1065, .v1_1066, .v1_1078 {
-    max-width: 844px;
-    width: 90%;
+  .v1_1078, .v6_5, .v6_4, .v6_8 {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    border-radius: 30px !important;
+    background-size: contain !important;
+    margin: 10px 0 !important;
+  }
+
+  .v1_902 {
+    height: auto !important;
+    position: relative !important;
+    overflow: visible !important;
   }
 }
