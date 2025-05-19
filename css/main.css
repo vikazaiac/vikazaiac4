@@ -7,52 +7,60 @@
 body {
   font-size: 14px;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(180deg, rgba(255,122,250,0.67), rgba(205,192,204,0.36));
+  background: linear-gradient(rgba(255,122,250,0.67), rgba(205,192,204,0.36));
 }
 
-/* Контейнери */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Основний блок */
+.v1_902 {
+  width: 100%;
+  height: 3838px;
+  overflow: hidden;
+  position: relative;
 }
 
-/* Основні блоки */
+/* Контентні блоки */
 .v1_1065, .v1_1066, .v1_1078, .v6_5, .v6_4, .v6_8 {
-  width: 90%;
-  max-width: 844px;
+  width: 844px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
-  margin: 20px auto;
+  margin: 40px auto;
+  position: absolute;
 }
 
-/* Текст */
+/* Текстові стилі */
 .v1_1067 {
   font-size: 64px;
   font-weight: bold;
-  text-align: center;
 }
 
-/* Адаптивність */
+.v1_1068, .v1_1074, .v1_1072 {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* Адаптивність для iPhone */
 @media (max-width: 768px) {
-  .v1_1065, .v1_1066, .v1_1078 {
+  .v1_1065, .v1_1066, .v1_1078, .v6_5, .v6_4, .v6_8 {
     width: 95%;
     max-width: 400px;
+    position: relative;
+  }
+
+  .v1_902 {
+    height: auto;
+    padding-bottom: 50px;
   }
 
   .v1_1067 {
     font-size: 40px;
+    text-align: center;
   }
-}
 
-@media (min-width: 1024px) {
-  .v1_1065, .v1_1066, .v1_1078 {
-    max-width: 844px;
+  .v1_1068, .v1_1074, .v1_1072 {
+    font-size: 18px;
+    text-align: center;
     width: 90%;
+    margin: auto;
   }
 }
