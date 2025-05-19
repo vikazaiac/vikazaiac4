@@ -1,4 +1,4 @@
-/* Базові стилі */
+/* ==== БАЗОВІ СТИЛІ ==== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,34 +8,39 @@
 body {
   font-family: Inter, sans-serif;
   font-size: 14px;
-  overflow-x: hidden;
   background: linear-gradient(rgba(255, 122, 250, 0.67), rgba(205, 192, 204, 0.36));
+  overflow-x: hidden;
+  color: #000;
 }
 
-/* Контейнер з flex */
-.intro-section {
+/* ==== ОСНОВНИЙ КОНТЕЙНЕР ==== */
+.v1_902 {
   width: 100%;
-  padding: 40px 20px;
+  position: relative;
+  overflow-x: hidden;
 }
 
+/* ==== ІНТРО СЕКЦІЯ ==== */
 .intro-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
   gap: 40px;
+  padding: 0 24px;
   flex-wrap: wrap;
 }
 
+/* ==== ТЕКСТ ==== */
 .intro-text {
   flex: 1 1 500px;
+  min-width: 280px;
 }
 
 .v1_1067 {
   font-size: 64px;
   font-weight: bold;
-  color: #000;
   margin-bottom: 20px;
 }
 
@@ -43,10 +48,12 @@ body {
 .v1_1074,
 .v1_1072 {
   font-size: 24px;
-  color: rgba(0, 0, 0, 0.75);
+  opacity: 0.75;
   margin-bottom: 16px;
+  line-height: 1.4;
 }
 
+/* ==== КАРТИНКА ПОРУЧ ==== */
 .v1_1078 {
   flex: 0 0 397px;
   height: 596px;
@@ -55,15 +62,15 @@ body {
   border-radius: 60px;
 }
 
+/* ==== ПІДПИС ==== */
 .v1_1077 {
   font-size: 40px;
   font-weight: bold;
-  color: #000;
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 20px;
 }
 
-/* Фонові секції */
+/* ==== ВЕЛИКІ ФОНОВІ СЕКЦІЇ ==== */
 .v6_5,
 .v6_4,
 .v6_8 {
@@ -71,10 +78,11 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
   margin: 20px 0;
 }
 
+/* Фонові картинки */
 .v6_5 {
   background-image: url("../images/v6_5.png");
 }
@@ -85,15 +93,21 @@ body {
   background-image: url("../images/v6_8.png");
 }
 
-/* Мобільна адаптація */
+/* ==== МОБІЛЬНА АДАПТАЦІЯ ==== */
 @media (max-width: 768px) {
   .intro-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 16px;
+  }
+
+  .intro-text {
+    text-align: left;
+    width: 100%;
   }
 
   .v1_1067 {
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
   }
 
@@ -101,25 +115,32 @@ body {
   .v1_1074,
   .v1_1072 {
     font-size: 18px;
-    text-align: center;
+    padding: 0 8px;
+    text-align: left;
   }
 
   .v1_1078 {
     width: 90%;
+    max-width: 320px;
     height: auto;
-    aspect-ratio: 2/3;
-    margin-top: 20px;
+    aspect-ratio: 2 / 3;
+    margin: 20px auto;
   }
 
   .v1_1077 {
     font-size: 24px;
     margin: 20px auto;
+    padding: 0 16px;
   }
 
   .v6_5,
   .v6_4,
   .v6_8 {
-    aspect-ratio: auto;
-    height: auto;
+    width: 100%;
+    min-height: 300px; /* важливо для відображення */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: auto; /* вимкнути, щоб не "здувались" */
   }
 }
