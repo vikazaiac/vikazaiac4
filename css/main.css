@@ -1,4 +1,3 @@
-/* Загальні стилі */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +10,7 @@ body {
   background: linear-gradient(180deg, rgba(255,122,250,0.67), rgba(205,192,204,0.36));
 }
 
-/* Контейнер */
+/* Контейнери */
 .container {
   max-width: 1200px;
   margin: auto;
@@ -21,15 +20,7 @@ body {
   align-items: center;
 }
 
-/* Основний блок */
-.v1_902 {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-/* Контентні блоки */
+/* Основні блоки */
 .v1_1065, .v1_1066, .v1_1078, .v6_5, .v6_4, .v6_8 {
   width: 90%;
   max-width: 844px;
@@ -40,20 +31,14 @@ body {
   margin: 20px auto;
 }
 
-/* Текстові стилі */
+/* Текст */
 .v1_1067 {
   font-size: 64px;
   font-weight: bold;
   text-align: center;
 }
 
-.v1_1068, .v1_1074, .v1_1072 {
-  font-size: 24px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-/* Адаптивні стилі */
+/* Адаптивність */
 @media (max-width: 768px) {
   .v1_1065, .v1_1066, .v1_1078 {
     width: 95%;
@@ -63,10 +48,11 @@ body {
   .v1_1067 {
     font-size: 40px;
   }
+}
 
-  .v1_1068, .v1_1074, .v1_1072 {
-    font-size: 18px;
+@media (min-width: 1024px) {
+  .v1_1065, .v1_1066, .v1_1078 {
+    max-width: 844px;
     width: 90%;
-    margin: auto;
   }
 }
