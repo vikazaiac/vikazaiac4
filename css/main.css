@@ -9,7 +9,7 @@ body {
   height: 3838px;
   background: linear-gradient(rgba(255,122,250,0.6700000166893005), rgba(205,192,204,0.36000001430511475));
   opacity: 1;
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
   overflow: hidden;
@@ -121,7 +121,7 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  position: absolute;
+  position: relative;
   top: 848px;
   left: 93px;
   overflow: hidden;
@@ -134,7 +134,7 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  position: absolute;
+  position: relative;
   top: 1723px;
   left: 94px;
   overflow: hidden;
@@ -147,7 +147,7 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  position: absolute;
+  position: relative;
   top: 2766px;
   left: 94px;
   overflow: hidden;
