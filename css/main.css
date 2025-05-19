@@ -1,60 +1,155 @@
-/* Мета-тег у HTML: додай у <head> */
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-/* Загальні стилі */
 * {
   box-sizing: border-box;
 }
+
 body {
   font-size: 14px;
-  margin: 0;
-  padding: 0;
 }
 
-/* Медійний запит для екранів до 600px (мобільних) */
-@media (max-width: 600px) {
-  .v1_1065, .v1_1066 {
-    width: 100% !important;
-    height: auto !important;
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    margin: 10px 0 !important;
-    background-size: contain !important; /* щоб фон краще підлаштовувався */
-  }
+.v1_902 {
+  width: 100%;
+  height: 3838px;
+  background: linear-gradient(
+    rgba(255, 122, 250, 0.67),
+    rgba(205, 192, 204, 0.36)
+  );
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
 
-  .v1_1067 {
-    font-size: 32px !important;
-    text-align: center !important;
-    position: relative !important;
-    width: 100% !important;
-    top: auto !important;
-    left: auto !important;
-  }
+.v1_1065 {
+  width: 844px;
+  height: 581px;
+  background: url("../images/v1_1065.png") no-repeat center center;
+  background-size: cover;
+  margin: 40px;
+  opacity: 1;
+  position: absolute;
+  top: 92px;
+  left: 94px;
+  overflow: hidden;
+}
 
-  .v1_1068, .v1_1074, .v1_1072, .v1_1077 {
-    font-size: 18px !important;
-    position: relative !important;
-    width: 100% !important;
-    top: auto !important;
-    left: auto !important;
-    text-align: center !important;
-  }
+.v1_1066 {
+  width: 844px;
+  height: 581px;
+  background: url("../images/v1_1066.png") no-repeat center center;
+  background-size: cover;
+  margin: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
 
-  .v1_1078, .v6_5, .v6_4, .v6_8 {
-    width: 100% !important;
-    height: auto !important;
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    border-radius: 30px !important;
-    background-size: contain !important;
-    margin: 10px 0 !important;
-  }
+.v1_1067 {
+  width: 844px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
 
-  .v1_902 {
-    height: auto !important;
-    position: relative !important;
-    overflow: visible !important;
-  }
+.v1_1068 {
+  width: 844px;
+  color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 101px;
+  left: 0;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v1_1074 {
+  width: 844px;
+  color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 233px;
+  left: 0;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v1_1072 {
+  width: 181px;
+  color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 473px;
+  left: 0;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v1_1078 {
+  width: 397px;
+  height: 596px;
+  background: url("../images/v1_1078.png") no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 92px;
+  left: 977px;
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.v1_1077 {
+  width: 472px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 723px;
+  left: 584px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v6_5 {
+  width: 100%;
+  height: 815px;
+  background: url("../images/v6_5.png") no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 848px;
+  left: 93px;
+  overflow: hidden;
+}
+
+.v6_4 {
+  width: 100%;
+  height: 960px;
+  background: url("../images/v6_4.png") no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1723px;
+  left: 94px;
+  overflow: hidden;
+}
+
+.v6_8 {
+  width: 100%;
+  height: 980px;
+  background: url("../images/v6_8.png") no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2766px;
+  left: 94px;
+  overflow: hidden;
 }
