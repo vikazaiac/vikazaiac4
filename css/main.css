@@ -1,3 +1,4 @@
+/* Загальні стилі */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,13 +9,23 @@ body {
   font-size: 14px;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(rgba(255,122,250,0.67), rgba(205,192,204,0.36));
+  overflow-x: hidden;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Основний блок */
 .v1_902 {
   width: 100%;
-  height: 3838px;
-  overflow: hidden;
+  height: auto;
   position: relative;
 }
 
@@ -24,6 +35,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 20px;
   margin: 40px auto;
   position: absolute;
 }
@@ -62,5 +74,13 @@ body {
     text-align: center;
     width: 90%;
     margin: auto;
+  }
+}
+
+/* Оптимізація для великих екранів */
+@media (min-width: 1024px) {
+  .v1_1065, .v1_1066, .v1_1078 {
+    max-width: 844px;
+    width: 90%;
   }
 }
