@@ -127,7 +127,7 @@ body {
   overflow: hidden;
 }
 .v6_4 {
-  width: 100%;
+  width: 50%;
   height: 960px;
   background: url("../images/v6_4.png");
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body {
   overflow: hidden;
 }
 .v6_8 {
-  width: 100%;
+  width: 50%;
   height: 980px;
   background: url("../images/v6_8.png");
   background-repeat: no-repeat;
