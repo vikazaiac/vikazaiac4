@@ -1,3 +1,4 @@
+/* Загальні стилі */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +8,10 @@
 body {
   font-size: 14px;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(rgba(255,122,250,0.67), rgba(205,192,204,0.36));
+  background: linear-gradient(180deg, rgba(255,122,250,0.67), rgba(205,192,204,0.36));
 }
 
+/* Контейнер */
 .container {
   max-width: 1200px;
   margin: auto;
@@ -27,7 +29,7 @@ body {
   position: relative;
 }
 
-/* Контентний блок */
+/* Контентні блоки */
 .v1_1065, .v1_1066, .v1_1078, .v6_5, .v6_4, .v6_8 {
   width: 90%;
   max-width: 844px;
@@ -51,9 +53,9 @@ body {
   color: rgba(0, 0, 0, 0.75);
 }
 
-/* **АДАПТИВНІСТЬ ДЛЯ МОБІЛЬНИХ** */
+/* Адаптивні стилі */
 @media (max-width: 768px) {
-  .v1_1065, .v1_1066, .v1_1078, .v6_5, .v6_4, .v6_8 {
+  .v1_1065, .v1_1066, .v1_1078 {
     width: 95%;
     max-width: 400px;
   }
@@ -64,5 +66,7 @@ body {
 
   .v1_1068, .v1_1074, .v1_1072 {
     font-size: 18px;
+    width: 90%;
+    margin: auto;
   }
 }
